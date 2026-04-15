@@ -21,13 +21,13 @@ export const sendAppointmentEmail = async (formData) => {
   }
 
   const templateParams = {
-    to_email: import.meta.env.VITE_CLINIC_EMAIL,
+    to_email: 'clinic@example.com',
     from_name: formData.name,
     from_email: formData.email,
     phone: formData.phone,
     appointment_date: formData.date,
     message: formData.message || 'No additional message',
-    clinic_name: import.meta.env.VITE_CLINIC_NAME
+    clinic_name: 'Dr. Mitesh Gandhi Dental Clinic'
   }
 
   try {

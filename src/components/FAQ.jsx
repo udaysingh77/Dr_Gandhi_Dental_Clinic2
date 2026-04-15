@@ -126,7 +126,7 @@ export default function FAQ() {
         >
           <p className="text-gray-600 mb-4">Have more questions?</p>
           <a
-            href={`tel:${import.meta.env.VITE_CLINIC_PHONE.replace(/\s+/g, '')}`}
+            href="tel:+919930813579"
             className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-xl font-semibold hover:bg-secondary transition-colors"
           >
             Call Us Now

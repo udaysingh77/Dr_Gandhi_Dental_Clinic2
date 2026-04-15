@@ -14,9 +14,9 @@ export default function Footer() {
   ]
 
   const socialLinks = [
-    { icon: FiPhone, href: `tel:${import.meta.env.VITE_CLINIC_PHONE.replace(/\s+/g, '')}`, label: 'Call' },
-    { icon: FiMail, href: `mailto:${import.meta.env.VITE_CLINIC_EMAIL}`, label: 'Email' },
-    { icon: FiMessageCircle, href: `https://wa.me/${import.meta.env.VITE_CLINIC_WHATSAPP}`, label: 'WhatsApp' }
+    { icon: FiPhone, href: 'tel:+919930813579', label: 'Call' },
+    { icon: FiMail, href: 'mailto:clinic@example.com', label: 'Email' },
+    { icon: FiMessageCircle, href: 'https://wa.me/919930813579', label: 'WhatsApp' }
   ]
 
   return (
@@ -99,22 +99,22 @@ export default function Footer() {
             <h4 className="font-bold text-lg mb-4">Get In Touch</h4>
             <div className="space-y-3">
               <a
-                href={`tel:${import.meta.env.VITE_CLINIC_PHONE.replace(/\s+/g, '')}`}
+                href="tel:+919930813579"
                 className="flex items-center gap-3 text-gray-400 hover:text-primary transition-colors text-sm"
               >
                 <FiPhone size={16} />
-                {import.meta.env.VITE_CLINIC_PHONE}
+                +91 9930813579
               </a>
               <a
-                href={`mailto:${import.meta.env.VITE_CLINIC_EMAIL}`}
+                href="mailto:clinic@example.com"
                 className="flex items-center gap-3 text-gray-400 hover:text-primary transition-colors text-sm"
               >
                 <FiMail size={16} />
-                {import.meta.env.VITE_CLINIC_EMAIL}
+                clinic@example.com
               </a>
               <div className="flex items-start gap-3 text-gray-400 text-sm">
                 <FiMapPin size={16} className="flex-shrink-0 mt-0.5" />
-                <span>{import.meta.env.VITE_CLINIC_CITY}</span>
+                <span>Mumbai</span>
               </div>
             </div>
           </motion.div>

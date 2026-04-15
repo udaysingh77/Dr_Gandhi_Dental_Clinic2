@@ -66,7 +66,7 @@ export default function Navbar() {
               </button>
             ))}
             <motion.a
-              href={`tel:${import.meta.env.VITE_CLINIC_PHONE.replace(/\s+/g, '')}`}
+              href="tel:+919930813579"
               whileHover={{ scale: 1.05 }}
               className="bg-primary text-white px-6 py-2 rounded-lg flex items-center gap-2 hover:bg-secondary transition-colors"
             >
@@ -104,7 +104,7 @@ export default function Navbar() {
               </button>
             ))}
             <a
-              href={`tel:${import.meta.env.VITE_CLINIC_PHONE.replace(/\s+/g, '')}`}
+              href="tel:+919930813579"
               className="block mx-4 mt-3 bg-primary text-white px-4 py-2 rounded-lg text-center font-medium hover:bg-secondary transition-colors"
             >
               Call Now

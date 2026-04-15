@@ -25,7 +25,7 @@ export default function FloatingButtons() {
     >
       {/* Call Button */}
       <motion.a
-        href={`tel:${import.meta.env.VITE_CLINIC_PHONE.replace(/\s+/g, '')}`}
+        href="tel:+919930813579"
         variants={itemVariants}
         whileHover="hover"
         whileTap={{ scale: 0.95 }}
@@ -37,7 +37,7 @@ export default function FloatingButtons() {
 
       {/* WhatsApp Button */}
       <motion.a
-        href={`https://wa.me/${import.meta.env.VITE_CLINIC_WHATSAPP}`}
+        href="https://wa.me/919930813579"
         target="_blank"
         rel="noopener noreferrer"
         variants={itemVariants}

@@ -57,7 +57,7 @@ export default function Hero() {
               className="flex flex-col sm:flex-row gap-4 mb-8"
             >
               <motion.a
-                href={`tel:${import.meta.env.VITE_CLINIC_PHONE.replace(/\s+/g, '')}`}
+                href="tel:+919930813579"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="inline-flex items-center justify-center gap-2 bg-primary text-white px-8 py-4 rounded-xl font-semibold hover:bg-secondary transition-colors shadow-lg hover:shadow-xl"
@@ -67,7 +67,7 @@ export default function Hero() {
               </motion.a>
 
               <motion.a
-                href={`https://wa.me/${import.meta.env.VITE_CLINIC_WHATSAPP}`}
+                href="https://wa.me/919930813579"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
@@ -95,7 +95,7 @@ export default function Hero() {
                   <span key={i} className="text-yellow-400 text-xl">★</span>
                 ))}
               </div>
-              <span className="text-gray-700 font-semibold">{import.meta.env.VITE_CLINIC_RATING} Rating on Google</span>
+              <span className="text-gray-700 font-semibold">4.9 Rating on Google</span>
             </motion.div>
           </motion.div>
 

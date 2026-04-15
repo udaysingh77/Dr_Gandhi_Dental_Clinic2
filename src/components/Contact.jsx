@@ -6,27 +6,27 @@ export default function Contact() {
     {
       icon: FiMapPin,
       title: 'Address',
-      content: import.meta.env.VITE_CLINIC_ADDRESS,
+      content: '22/23 Shop Number, Veena Geet Sangeet, Mahavir Nagar, Kandivali West, Mumbai, Maharashtra 400067',
       action: 'View on Maps'
     },
     {
       icon: FiPhone,
       title: 'Phone',
-      content: import.meta.env.VITE_CLINIC_PHONE,
+      content: '+91 9930813579',
       action: 'Call Now',
-      href: `tel:${import.meta.env.VITE_CLINIC_PHONE.replace(/\s+/g, '')}`
+      href: 'tel:+919930813579'
     },
     {
       icon: FiMail,
       title: 'Email',
-      content: import.meta.env.VITE_CLINIC_EMAIL,
+      content: 'clinic@example.com',
       action: 'Send Email',
-      href: `mailto:${import.meta.env.VITE_CLINIC_EMAIL}`
+      href: 'mailto:clinic@example.com'
     },
     {
       icon: FiClock,
       title: 'Working Hours',
-      content: `Monday - Sunday: ${import.meta.env.VITE_CLINIC_HOURS}`,
+      content: 'Monday - Sunday: 9 AM - 8 PM',
       action: null
     }
   ]
@@ -111,7 +111,7 @@ export default function Contact() {
             className="bg-light rounded-2xl overflow-hidden h-96 md:h-full"
           >
             <iframe
-              src={import.meta.env.VITE_CLINIC_MAP_URL}
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.1234567890!2d72.82385!3d19.17865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c99999999999%3A0x9999999999999999!2sKandivali%20West%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1234567890"
               width="100%"
               height="100%"
               style={{ border: 0 }}
